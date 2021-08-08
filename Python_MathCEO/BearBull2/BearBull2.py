@@ -5,10 +5,9 @@ import numpy as np
 
 rng = np.random.default_rng()
 
-#img_bull = 'images/bull.png'
-img_bull = 'https://upload.wikimedia.org/wikipedia/commons/0/03/BULL.png'
-img_bear = 'https://upload.wikimedia.org/wikipedia/commons/1/1e/JB_PRODUCE_logo_oficial.png'
-img_straight = 'https://static.thenounproject.com/png/1494756-200.png'
+img_bull = 'https://github.com/ChristopherDavisUCI/Math_CEO/blob/main/Python_MathCEO/BearBull2/images/bull.png?raw=true'
+img_bear = 'https://github.com/ChristopherDavisUCI/Math_CEO/blob/main/Python_MathCEO/BearBull2/images/bear.png?raw=true'
+img_straight = 'https://github.com/ChristopherDavisUCI/Math_CEO/blob/main/Python_MathCEO/BearBull2/images/straight.png?raw=true'
 
 animal_dict = {"Bull":img_bull, "Bear":img_bear, "Straight":img_straight}
 
@@ -21,10 +20,10 @@ cols = st.beta_columns([x for _ in range(5) for x in [1.3,1]])
 
 for i in range(0,len(cols),2):
     with cols[i]:
-        st.image("images/bear.png")
+        st.image("https://github.com/ChristopherDavisUCI/Math_CEO/blob/main/Python_MathCEO/BearBull2/images/bear.png?raw=true")
 
     with cols[i+1]:
-        st.image("images/bull.png")
+        st.image("https://github.com/ChristopherDavisUCI/Math_CEO/blob/main/Python_MathCEO/BearBull2/images/bull.png?raw=true")
 
 st.header("Introduction")
 
@@ -38,13 +37,13 @@ st.markdown('''
     Notice how the price on Day 11 doesn't matter, only the price on Day 7, because we only care about the price five days earlier.  Do you see why Day 7 is a bear market?
     ''', unsafe_allow_html=True)
 
-st.image("images/sample1.png", use_column_width='auto')
+st.image("https://github.com/ChristopherDavisUCI/Math_CEO/blob/main/Python_MathCEO/BearBull2/images/sample1.png?raw=true", use_column_width='auto')
 
 st.markdown('''
     The first five prices represent neither bear markets nor bull markets, because we don't know what the price was five days earlier.  The values for all the other days in this sample market are shown below.
 ''')
 
-st.image("images/sample2.png", use_column_width='auto')
+st.image("https://github.com/ChristopherDavisUCI/Math_CEO/blob/main/Python_MathCEO/BearBull2/images/sample2.png?raw=true", use_column_width='auto')
 
 st.header("Your challenge")
 
