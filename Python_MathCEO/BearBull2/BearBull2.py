@@ -87,7 +87,7 @@ def make_chart(name,pts,animal):
 
         max_score = (df['img']==animal_dict[animal]).sum()
 
-    answers_selection = alt.selection_multi(on='click', toggle=False, empty='none',fields = ['x'], init=[{'x':[1,2,3,6]}])
+    answers_selection = alt.selection_multi(on='click', toggle=False, empty='none',fields = ['x'], init=[{'x':[1,2,3]}])
 
     base = alt.Chart(df).mark_image(width=20,height=20).encode(
         x=alt.X('x:O', axis = alt.Axis(title="Day",labelAngle=0,tickCount=len(df),labelOverlap="parity")),
