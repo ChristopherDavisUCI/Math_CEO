@@ -114,12 +114,12 @@ def make_chart(name,pts,animal):
         x=alt.value(5),
         y=alt.value(-30),
         color = alt.condition(f"datum.total_score == {max_score}",alt.value("green"),alt.value("black")),
-        text = alt.condition(f"datum.total_score == {max_score}",alt.value("You win!! "*5),'text:N'),
+        text = alt.condition(f"datum.total_score == {max_score}",alt.value("You win!! "*5),'text_base:N'),
         size = alt.condition(f"datum.total_score == {max_score}",alt.value(30),alt.value(14))
     ).transform_aggregate(
         total_score='sum(score)'
     ).transform_calculate(
-        text=f'Click all of the {animal}s.  Your current score: '+alt.datum.total_score
+        text_base=f'Click all of the {animal}s.  Your current score: '+alt.datum.total_score
     )
 
     comb = alt.layer(base,text).properties(
