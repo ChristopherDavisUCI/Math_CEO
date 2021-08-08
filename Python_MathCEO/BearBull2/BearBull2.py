@@ -5,9 +5,9 @@ import numpy as np
 
 rng = np.random.default_rng()
 
-img_bull = 'https://github.com/ChristopherDavisUCI/Math_CEO/blob/main/Python_MathCEO/BearBull2/images/bull.png?raw=true'
-img_bear = 'https://github.com/ChristopherDavisUCI/Math_CEO/blob/main/Python_MathCEO/BearBull2/images/bear.png?raw=true'
-img_straight = 'https://github.com/ChristopherDavisUCI/Math_CEO/blob/main/Python_MathCEO/BearBull2/images/straight.png?raw=true'
+img_bull = 'https://upload.wikimedia.org/wikipedia/commons/0/03/BULL.png'
+img_bear = 'https://upload.wikimedia.org/wikipedia/commons/1/1e/JB_PRODUCE_logo_oficial.png'
+img_straight = 'https://static.thenounproject.com/png/1494756-200.png'
 
 animal_dict = {"Bull":img_bull, "Bear":img_bear, "Straight":img_straight}
 
