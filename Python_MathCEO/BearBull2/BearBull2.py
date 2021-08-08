@@ -125,7 +125,7 @@ def make_chart(name,pts,animal):
 
     comb = alt.layer(base,text).properties(
         title={
-          "text": ["",f"Price of {name}"],
+          "text": ["","",f"Price of {name}"],
           "subtitle": [f'Click all of the {animal}s.',f"Maximum possible score: {max_score}",""],
           "color": "black",
           "fontSize": 18,
