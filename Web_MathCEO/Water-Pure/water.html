@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/grids-responsive-min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Water Molecules</title>
+    <!-- MDB icon -->
+  </head>
+
+  <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  
+    <div class="splash-container">
+      <div class="splash">
+          <h1 class="splash-head">Water Molecules</h1>
+          <p class="splash-subhead" style="text-align:left">
+            The following rules apply.</p>
+          <ol style="text-align:left;
+          color: white; opacity: 0.8;">
+            <li>Each atom of oxygen weighs 5.</li>
+            <li>The weight of a hydrogen atom is always a positive even number.</li>
+            <li>A molecule of water is made of one atom of oxygen and two atoms of hydrogen, and the atoms of hydrogen must have the same weight.</li>
+          </ol>
+          <p class="splash-subhead" style="text-align:left">
+            Three examples: Water molecules could weigh 9, or 17, or 33:</p>
+          <img src="images/examples.png" style="width:40%">
+          <p class="splash-subhead" style="text-align:left">
+            Scroll down to reach the puzzles.</p>
+      </div>
+    </div>
+    
+
+    <div class="content-wrapper">
+      <div class="content" id="card-contents">
+          <div class="card" id="template">
+            <div class="pure-g">
+              <div class="pure-u-1-1 is-center"><p class="bold is-center" id="target0">Target: </p></div>
+              <div class="pure-u-1-1 is-center">
+                <form class="pure-form" onsubmit="return false">
+                  <input type="number" id="ox0" class="pure-input-rounded ox" placeholder="Oxygen value" style="text-align: left;"/>
+                </form>
+              </div>
+              <div class="pure-u-1-2 is-center">
+                <form class="pure-form" onsubmit="return false">
+                  <input type="number" id="hyd1-0" class="pure-input-rounded hyd" placeholder="1st hydrogen value" style="text-align: left;"/>
+                </form>
+              </div>
+              <div class="pure-u-1-2 is-center">
+                <form class="pure-form" onsubmit="return false">
+                  <input type="number" id="hyd2-0" class="pure-input-rounded hyd" placeholder="2nd hydrogen value" style="text-align: left;"/>
+                </form>
+              </div>
+              <div class="pure-u-1-1 is-center">
+                <p id="message0" style="text-align: center">Your total: ??</p>
+              </div>
+              <div class="pure-u-1-2 is-center">
+                <button class="pure-material-button-outlined" id="check0" style="border-color: green; color:green;">Check answers</button>
+              </div>
+              <div class="pure-u-1-2 is-center">
+                <button class="pure-material-button-outlined" id="imp0" style="border-color: red; color:red;">This is impossible!</button>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+    </div>
+    
+      
+    
+    <script src="js/water.js"></script>
+  
+  </body>
+  </html>
