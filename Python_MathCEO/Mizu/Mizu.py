@@ -5,7 +5,7 @@ import streamlit.components.v1 as components
 
 # Some Chart code copied from: https://github.com/thecraigoneill/gravitymodel/blob/main/streamlit_app.py
 
-st.image("images/mizu.png",width=300)
+st.image("https://github.com/ChristopherDavisUCI/Math_CEO/blob/main/Python_MathCEO/Mizu/images/mizu.png?raw=true",width=300)
 
 st.title("The region of Mizu :sunglasses:")
 
