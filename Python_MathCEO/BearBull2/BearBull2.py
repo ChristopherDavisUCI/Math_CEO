@@ -12,7 +12,7 @@ img_straight = 'https://static.thenounproject.com/png/1494756-200.png'
 
 animal_dict = {"Bull":img_bull, "Bear":img_bear, "Straight":img_straight}
 
-series_comm = pd.read_csv("commodities.csv",usecols=[0,1],index_col=0,thousands=",",
+series_comm = pd.read_csv("https://raw.githubusercontent.com/ChristopherDavisUCI/Math_CEO/main/Python_MathCEO/BearBull2/commodities.csv",usecols=[0,1],index_col=0,thousands=",",
                           squeeze=True,dtype={"Commodity":"string","Price":"float64"})
 
 st.title("Bear Markets and Bull Markets")
