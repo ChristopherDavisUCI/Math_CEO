@@ -1,0 +1,1 @@
+web: gunicorn konig2:server
