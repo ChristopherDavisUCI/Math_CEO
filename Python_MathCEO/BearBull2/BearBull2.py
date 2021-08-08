@@ -118,15 +118,15 @@ def make_chart(name,pts,animal):
     ).transform_aggregate(
         total_score='sum(score)'
     ).transform_calculate(
-        text_base=f'Click all of the {animal}s.  Your current score: '+alt.datum.total_score
+        text_base=f'Your current score: '+alt.datum.total_score
     ).encode(
         text = alt.condition(f"datum.total_score == {max_score}",alt.value("You win!! "*5),'text_base:N'),
     )
 
     comb = alt.layer(base,text).properties(
         title={
-          "text": f"Price of {name}",
-          "subtitle": [f"Maximum possible score: {max_score}",""],
+          "text": ["",f"Price of {name}"],
+          "subtitle": [f'Click all of the {animal}s.',f"Maximum possible score: {max_score}",""],
           "color": "black",
           "fontSize": 18,
           "subtitleFontSize":14,
